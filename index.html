@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </head>
+    <body onload="var myGame = new MyGame('GLCanvas');
+    gEngine.Core.initializeEngineCore('GLCanvas', myGame);">
+        <h1>Demo</h1>
+        <div class="row">
+            <div class="col-md-7">
+            <canvas id="GLCanvas" width="720" height="480">
+                <!-- GLCanvas is the area we will draw in: a 640x480 area. -->
+                Your browser does not support the HTML5 canvas.
+                <!-- this message will show only if WebGL clearing failed -->
+            </canvas>
+            </div>
+            <div class="col-md-5">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor enim, finibus id pellentesque blandit, sollicitudin quis nisi. Integer est justo, fringilla id nisi non, fermentum accumsan quam. Curabitur sit amet augue at sem luctus aliquam. Sed efficitur elit sit amet posuere euismod. Praesent pulvinar arcu ut volutpat semper. Nulla fermentum dui sed aliquet dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+            </div>
+    <!-- gl-matrix helper library -->
+    <script type="text/javascript" src="src/lib/gl-matrix.js"></script>
+    <!-- concatted engine -->
+    <script type="text/javascript" src="src/dist/gameEngine.js"></script>
+
+    <!-- Client game code -->
+    <script type="text/javascript" src="myGame/myGame.js"></script>
+
+</body>
+</html>

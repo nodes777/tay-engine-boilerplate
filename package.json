@@ -1,0 +1,19 @@
+{
+  "name": "tay-engine-boilerplate",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Taylor Nodell",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "growl": "^1.10.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "description": ""
+}
