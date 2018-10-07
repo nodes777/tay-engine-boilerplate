@@ -10,6 +10,9 @@
 
 "use strict"; // Operate in Strict mode such that variables must be declared before used!
 
+// loaded sprite sheets must be 2^x by 2^y
+// 1024x512, 128x64, 2x4, 4x16, 64x256
+
 function MyGame() {
     // this.kMinionSprite = "assets/minion_sprite.png";
     // this.kPlatformTexture = "assets/platform.png";
@@ -24,7 +27,7 @@ function MyGame() {
     this.mMsg = null;
 
     // sprite objects
-    this.jellySpriteSheet = "assets/minion_sprite.png";
+    this.jellySpriteSheet = "assets/jelly.png";
     this.mJelly = null;
 
     this.mCollidedObj = null;
@@ -56,9 +59,9 @@ MyGame.prototype.initialize = function() {
     gEngine.DefaultResources.setGlobalAmbientIntensity(3);
 
     this.mJelly = new SpriteRenderable(this.jellySpriteSheet);
-    this.mJelly.setColor([1, 0, 0, 0.2]);  // tints red
+    this.mJelly.setColor([1, 0, 0, 0.2]); // tints red
     this.mJelly.getXform().setPosition(10, 30);
-    this.mJelly.getXform().setSize(3, 3);
+    this.mJelly.getXform().setSize(4, 4);
     this.mJelly.setElementPixelPositions(0, 32, 0, 32);
 
     // the important objects
@@ -77,7 +80,7 @@ MyGame.prototype.draw = function() {
 
     this.mCamera.setupViewProjection();
 
-    //this.mJelly.draw(this.mCamera);
+    this.mJelly.draw(this.mCamera);
     // this.mAllMinions.draw(this.mCamera);
     // this.mAllDyePacks.draw(this.mCamera);
     // this.mHero.draw(this.mCamera);
@@ -101,7 +104,6 @@ MyGame.prototype.update = function() {
     if (gEngine.Input.isKeyPressed(gEngine.Input.keys.W)) {
         this.kPrompt = "W pressed!";
     }
-
 
     // physics simulation
     //this._physicsSimulation();

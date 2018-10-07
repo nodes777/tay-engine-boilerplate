@@ -1,0 +1,3 @@
+WebGL supports only textures that are defined by images with 2x×2y resolutions; this means a 256x128 (28×27) image would be required in order to create a WebGL texture for the Dye character
+
+Only supports texture with image resolutions in powers of 2, such as 2x4 (21x22), or 4x16 (22x24), or 64x256 (26x28), and so on. This is also the case for your configuration of WebGL. All examples in this book work only with textures with resolutions that are powers of 2
