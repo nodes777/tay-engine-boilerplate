@@ -9,11 +9,14 @@
   "author": "Taylor Nodell",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.26.3",
+    "graceful-fs": "^4.1.15",
     "growl": "^1.10.5",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-update": "0.0.2",
+    "natives": "^1.1.6"
   },
   "description": ""
 }
